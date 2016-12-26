@@ -1,11 +1,10 @@
 'use strict';
 
-import args from './lib/args';
-import Promise from 'bluebird';
-import logger from './lib/logger';
-import config from './lib/config';
-import deploy from './lib/deploy';
-
+const args = require('./lib/args')
+const Promise = require('bluebird')
+const logger = require('./lib/logger')
+const config = require('./lib/config')
+const deploy = require('./lib/deploy')
 
 const dploy = {
 
@@ -35,5 +34,4 @@ const dploy = {
   }
 };
 
-
-export default dploy.init;
+module.exports = dploy.init;

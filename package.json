@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "dploy",
   "version": "2.0.0-beta",
   "author": "Lucas Motta <http://lucasmotta.com>",
@@ -17,12 +18,8 @@
   "bin": {
     "dploy": "./bin/dploy"
   },
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "license": "ISC",
   "dependencies": {
-    "babel": "^5.5.8",
     "bluebird": "^2.9.27",
     "chalk": "^1.0.0",
     "ftp": "^0.3.10",
@@ -41,5 +38,9 @@
     "untildify": "^2.0.0",
     "yamljs": "^0.2.3",
     "yargs": "^3.11.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
   }
 }
